@@ -1,17 +1,6 @@
 (ns snazzy.core
   (:require cljsjs.d3))
 
-(defn say-hi []
-  (js/console.log "Hi from core.cljs"))
-
-(defn hi-d3 []
-  (-> js/d3
-      (.select "body")
-      (.append "p")
-      (.text "hi")))
-
-(say-hi)
-
 ;; HTML element IDs
 (def html-id-app "app")
 (def html-id-chart "chart")
